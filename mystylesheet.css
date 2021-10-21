@@ -136,6 +136,7 @@ a {
   list-style: none;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.705);
+  padding: 0;
 }
 
 .footer .container ul,
@@ -147,6 +148,7 @@ a:visited {
   margin: auto;
   text-align: left;
   line-height: 2rem;
+  width: 40%;
 }
 .footer .container .socials {
   margin: auto;
@@ -157,6 +159,7 @@ a:visited {
   margin: auto;
   text-align: right;
   line-height: 2rem;
+  width: 40%;
 }
 
 .footer .container .socials a {
@@ -176,12 +179,14 @@ a:visited {
 .footer .container .list2 {
   float: left;
   text-align: right;
-  width: 40%;
   line-height: 2rem;
 }
 .footer .copy {
   width: 75%;
   color: white;
+  margin: auto;
+  font: 10px arial;
+  padding-top: 1rem;
 }
 .copy p {
   margin: 0;
