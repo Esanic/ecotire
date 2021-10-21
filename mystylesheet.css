@@ -93,6 +93,14 @@ body {
   color: white;
 }
 
+/*.fa-wrench {
+  color: white;
+  font-size: 3.5rem;
+  position: relative;
+  top: 2.6rem;
+  left: 2.6rem;
+}*/
+
 .button:hover {
   background-image: radial-gradient(circle, #42c53d, #27a723, #1d861a);
 }
@@ -131,7 +139,7 @@ body {
   width: 75%;
 }
 .footer .container ul,
-a {
+.footer .container ul a {
   text-decoration: none;
   list-style: none;
   font-size: 1rem;
@@ -140,7 +148,12 @@ a {
 }
 
 .footer .container ul,
-a:visited {
+.footer .container ul a:visited {
+  color: white;
+}
+
+.footer .container ul,
+.footer .container ul a:hover {
   color: white;
 }
 
@@ -192,8 +205,4 @@ a:visited {
 }
 .copy p {
   margin: 0;
-}
-.footer .container ul,
-a:hover {
-  color: white;
 }
