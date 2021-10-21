@@ -78,7 +78,7 @@ body {
 .button {
   height: 9rem;
   width: 9rem;
-  background-image: radial-gradient(#27a723, #22971f);
+  background-image: radial-gradient(circle, #27a723, #27a723, #1d861a);
   border-radius: 100%;
   margin: auto;
   text-decoration: none;
@@ -94,7 +94,7 @@ body {
 }
 
 .button:hover {
-  background-color: #22971f;
+  background-image: radial-gradient(circle, #42c53d, #27a723, #1d861a);
 }
 
 #content {
