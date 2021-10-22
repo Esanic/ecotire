@@ -1,6 +1,6 @@
 /*Anpassning till hela <body>*/
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font: 14px Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -41,8 +41,9 @@ body {
   background-color: white;
   color: black;
   text-align: left;
+  border-radius: 0 8px 8px 0;
   border: 1px solid black;
-  padding: 0;
+  padding: 1rem;
   font: 12px arial;
 }
 
@@ -118,6 +119,13 @@ body {
   background-position: center;
 }
 
+#divider-tirehotel {
+  width: 100%;
+  height: 20rem;
+  background-image: url("pics/dackhotell_banner1.jpg");
+  background-position: center;
+}
+
 /*Sidans innehåll*/
 #body {
   width: 100%;
@@ -185,7 +193,7 @@ body {
   min-height: 20rem;
   margin: auto;
   background-color: white;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   box-shadow: 0px 0 12px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -193,13 +201,26 @@ body {
 .text {
   float: left;
   width: 50%;
+  margin: 0 1rem 0 0;
+}
+
+/*Stilsättning på bakgrunden till formulär*/
+.form {
+  background-color: rgb(206, 206, 206);
+  padding: 1rem;
+  font: 12px arial;
+  border-radius: 8px;
 }
 
 /*Bild behållare*/
 .bild {
-  float: left;
+  float: right;
   width: 50%;
-  padding: 5rem 0 0 0;
+  padding: 4rem 0 0 0;
+}
+
+.bild img {
+  float: right;
 }
 
 /*Sidfot*/
