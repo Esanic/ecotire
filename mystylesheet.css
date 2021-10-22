@@ -110,6 +110,22 @@ body {
   text-decoration: underline;
 }
 
+#navigation ul li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 1rem 0.5rem;
+  border-radius: 0rem 0rem 10% 10%;
+}
+#navigation ul li:hover ul {
+  display: block;
+}
+
+#navigation ul li ul li {
+  height: 2.5rem;
+  width: 5rem; 
+}
+
 /*Delare*/
 #divider {
   width: 100%;
