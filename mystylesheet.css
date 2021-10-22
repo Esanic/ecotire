@@ -93,14 +93,6 @@ body {
   color: white;
 }
 
-/*.fa-wrench {
-  color: white;
-  font-size: 3.5rem;
-  position: relative;
-  top: 2.6rem;
-  left: 2.6rem;
-}*/
-
 .button:hover {
   background-image: radial-gradient(circle, #42c53d, #27a723, #1d861a);
 }
