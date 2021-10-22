@@ -11,10 +11,35 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Script för "kontakta oss"-formuläret -->
     <link rel="stylesheet" href="mystylesheet.css" />
+    <script>
+      function contactSoon() {
+        alert("Vi kontaktar dig inom kort");
+      }
+    </script>
   </head>
 
   <body>
+    <div id="contactcontainer">
+      <div id="contact">
+        <h3>Kontakta oss <i class="fas fa-comment"></i></h3>
+        <div id="contactform">
+          <form onsubmit="contactSoon();">
+            <label for="fname">Ditt förnamn:</label><br />
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <label for="lname">Ditt efternamn:</label><br />
+            <input type="text" id="lname" name="lname" /><br /><br />
+            <label for="email">Din E-postadress:</label><br />
+            <input type="email" id="email" name="email" /><br /><br />
+            <label for="text">Ditt meddelande:</label><br />
+            <textarea id="text" name="text" rows="5" cols="40"></textarea
+            ><br /><br />
+            <input type="submit" value="Skicka" />
+          </form>
+        </div>
+      </div>
+    </div>
     <div id="header">
       <div id="headercontainer">
         <!--logga-->
@@ -37,12 +62,13 @@
     </div>
 
     <div id="divider"></div>
-
     <div id="body">
       <div id="buttons-container">
-        <a href="#/" class="button"><p>Boka</p></a>
-        <a href="#/" class="button"><p>Verkstad</p></a>
-        <a href="#/" class="button"><p>Däckhotell</p></a>
+        <!--<a href="#/" class="button"><p>Boka</p></a>-->
+
+        <a href="#/" class="button"><i class="far fa-calendar-times"></i></a>
+        <a href="#/" class="button"><i class="fas fa-wrench"></i></a>
+        <a href="#/" class="button"><i class="fas fa-store"></i> </a>
       </div>
       <div id="content">
         <div class="text">
