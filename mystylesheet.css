@@ -1,14 +1,16 @@
+/*Anpassning till hela <body>*/
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/*Kontakta oss-knapp*/
 #contact {
   position: fixed;
-  width: 10rem;
+  width: 6rem;
   background-image: linear-gradient(#1d861a, #27a723, #27a723, #1d861a);
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 8px 8px 0;
   text-align: center;
   top: 16rem;
   color: white;
@@ -18,15 +20,21 @@ body {
   box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.35);
 }
 
+/*Stilsättning på kontakta oss-knappen vid mus över*/
 #contact:hover {
   background-image: linear-gradient(#1d861a, #27a723, #27a723, #1d861a);
   box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.35);
 }
-
+/*Stilsättning på pratbubblan i kontakta oss-knappen*/
 #contact .fa-comment {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  padding: 0 0 0 0.2rem;
+}
+#contact h4 {
+  margin: 0.5rem;
 }
 
+/*Kontakta oss-formuläret*/
 #contactform {
   display: none;
   min-width: 15rem;
@@ -34,14 +42,16 @@ body {
   color: black;
   text-align: left;
   border: 1px solid black;
-  padding: 1rem;
+  padding: 0;
   font: 12px arial;
 }
 
+/*Stilsättning för att framhäva kontakta oss-formuläret vid mus över kontakta oss-knapp*/
 #contact:hover #contactform {
   display: inline-block;
 }
 
+/*Header*/
 #header {
   width: 100%;
   position: relative;
@@ -49,6 +59,8 @@ body {
   background-color: white;
   z-index: 1;
 }
+
+/*Header behållare av logga och meny*/
 #headercontainer {
   width: 75%;
   margin: auto;
@@ -57,42 +69,48 @@ body {
   flex-wrap: wrap;
   height: 8rem;
 }
-
-#logo,
-#logo a {
+/*Logga*/
+#logo {
   float: left;
   margin: auto;
   flex-basis: 50%;
 }
-
+/*Meny behållare*/
 #navigation {
   margin: auto;
   flex-basis: 50%;
 }
 
+/*Stilsättning av menyns "lista"*/
 #navigation ul {
   display: flex;
   float: right;
 }
+
+/*Stilsättning på varje item i menyn*/
 #navigation ul li {
   padding: 0 1rem;
   list-style: none;
 }
 
+/*Stilsättning av länkar i menyn*/
 #navigation ul li a:link {
   color: #27a723;
   text-decoration: none;
   font: 1.3rem Arial;
 }
 
+/*Stilsättning av besökta länkar i menyn*/
 #navigation ul li a:visited {
   color: #27a723;
 }
 
+/*Stilsättning av länkar som musen hålls över i menyn*/
 #navigation ul li a:hover {
   text-decoration: underline;
 }
 
+/*Delare*/
 #divider {
   width: 100%;
   height: 20rem;
@@ -100,12 +118,13 @@ body {
   background-position: center;
 }
 
+/*Sidans innehåll*/
 #body {
   width: 100%;
   background-color: lightgray;
   padding: 2rem 0;
 }
-
+/*Behållare för knappar som finns på startsida*/
 #buttons-container {
   margin: auto;
   width: 75%;
@@ -114,6 +133,7 @@ body {
   padding: 0.5rem;
 }
 
+/*Stilsättning för knappar som finns på startsida*/
 .button {
   height: 9rem;
   width: 9rem;
@@ -124,6 +144,7 @@ body {
   box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.35);
 }
 
+/*Stilsättning för ikoner på knappar*/
 .fa-wrench,
 .fa-calendar-times,
 .fa-store {
@@ -133,14 +154,16 @@ body {
   top: 2.6rem;
   left: 2.6rem;
 }
+/*Special anpassning till bokningsloggan för centrering*/
 .fa-calendar-times {
   left: 2.9rem;
 }
 
+/*Ändringen av bakgrundfärg vid mus över knapp*/
 .button:hover {
   background-image: radial-gradient(circle, #42c53d, #27a723, #1d861a);
 }
-
+/*Behållare för text under knappar på första sidan*/
 #buttons-text {
   margin: auto;
   width: 75%;
@@ -148,12 +171,14 @@ body {
   padding: 0 0 2rem 0;
 }
 
+/*Stilsättning av text under knappar på första sidan*/
 .button-text {
   margin: auto;
   flex-basis: 33%;
   text-align: center;
 }
 
+/*Behållare för innehåll*/
 #content {
   display: flex;
   width: 75%;
@@ -164,16 +189,20 @@ body {
   box-shadow: 0px 0 12px 0 rgba(0, 0, 0, 0.15);
 }
 
+/*Text behållare*/
 .text {
   float: left;
   width: 50%;
 }
+
+/*Bild behållare*/
 .bild {
   float: left;
   width: 50%;
   padding: 5rem 0 0 0;
 }
 
+/*Sidfot*/
 .footer {
   position: relative;
   bottom: 0;
@@ -182,11 +211,14 @@ body {
   width: 100%;
 }
 
+/*Sidfots behållare*/
 .footer .container {
   display: flex;
   margin: auto;
   width: 75%;
 }
+
+/*Stilsättning av osorterade listor i sidfoten och länkar där i*/
 .footer .container ul,
 .footer .container ul a {
   text-decoration: none;
@@ -196,27 +228,29 @@ body {
   padding: 0;
 }
 
+/*Stilsättning av osoroterade listor i sidfoten och besökta länkar där i*/
 .footer .container ul,
-.footer .container ul a:visited {
-  color: white;
-}
-
-.footer .container ul,
+.footer .container ul a:visited,
 .footer .container ul a:hover {
   color: white;
 }
 
+/*Stilsättning av menyn i sidfoten*/
 .footer .container .list1 {
   margin: auto;
   text-align: left;
   line-height: 2rem;
   width: 40%;
 }
+
+/*Stilsättning av sociala medier-knappar*/
 .footer .container .socials {
   margin: auto;
   text-align: center;
   line-height: 2rem;
 }
+
+/*Stilsättning av verksamhetsuppgifter*/
 .footer .container .list2 {
   margin: auto;
   text-align: right;
@@ -224,21 +258,19 @@ body {
   width: 40%;
 }
 
+/*Stilsättning av länkar i sociala medier.*/
 .footer .container .socials a {
   font-size: 1.5rem;
 }
 
+/*Stilsättning av länkar som hålls över av musen i samtliga delar i sidfoten*/
 .footer .container .socials a:hover,
 .footer .container .list1 a:hover,
 .footer .container .list2 a:hover {
   opacity: 1;
 }
 
-.footer .container .list2 {
-  float: left;
-  text-align: right;
-  line-height: 2rem;
-}
+/*Stilsättning av Copyright behållaren*/
 .footer .copy {
   position: relative;
   left: 2.4rem;
@@ -248,6 +280,8 @@ body {
   font: 10px arial;
   padding-top: 1rem;
 }
+
+/*Stilsättning av Copyright texten*/
 .copy p {
   margin: 0;
 }
