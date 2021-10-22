@@ -4,6 +4,43 @@ body {
   padding: 0;
 }
 
+#contactcontainer {
+  display: flex;
+  position: sticky;
+  top: 16rem;
+  float: left;
+}
+#contact {
+  position: Sticky;
+  display: inline-block;
+  width: 10rem;
+  background-color: #27a723;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  top: 14rem;
+  color: white;
+  font: 1rem;
+}
+
+#contact .fa-comment {
+  font-size: 1.5rem;
+}
+
+#contactform {
+  display: none;
+  position: sticky;
+  min-width: 15rem;
+  background-color: white;
+  color: black;
+  text-align: left;
+  border: 1px solid black;
+  padding: 1rem 0;
+}
+
+#contact:hover #contactform {
+  display: inline-block;
+}
+
 #header {
   width: 100%;
   position: relative;
@@ -93,13 +130,18 @@ body {
   color: white;
 }
 
-/*test.fa-wrench {
+.fa-wrench,
+.fa-calendar-times,
+.fa-store {
   color: white;
   font-size: 3.5rem;
   position: relative;
   top: 2.6rem;
   left: 2.6rem;
-}*/
+}
+.fa-calendar-times {
+  left: 2.9rem;
+}
 
 .button:hover {
   background-image: radial-gradient(circle, #42c53d, #27a723, #1d861a);
