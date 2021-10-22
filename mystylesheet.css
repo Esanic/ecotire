@@ -117,14 +117,23 @@ body {
   background-color: white;
   padding: 1rem 0.5rem;
   border-radius: 0rem 0rem 10% 10%;
+  line-height: 4rem;
 }
+
+#dropmenu1 {
+  margin-left: -1.6rem;
+}
+#dropmenu2 {
+  margin-left: -3rem;
+}
+
 #navigation ul li:hover ul {
   display: block;
 }
 
 #navigation ul li ul li {
   height: 2.5rem;
-  width: 5rem; 
+  text-align: center;
 }
 
 /*Delare*/
