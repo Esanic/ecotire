@@ -21,35 +21,36 @@
   </head>
 
   <body>
-    <div id="contactcontainer">
-      <div id="contact">
-        <h3>Kontakta oss <i class="fas fa-comment"></i></h3>
-        <div id="contactform">
-          <form onsubmit="contactSoon();">
-            <label for="fname">Ditt förnamn:</label><br />
-            <input type="text" id="fname" name="fname" /><br /><br />
-            <label for="lname">Ditt efternamn:</label><br />
-            <input type="text" id="lname" name="lname" /><br /><br />
-            <label for="email">Din E-postadress:</label><br />
-            <input type="email" id="email" name="email" /><br /><br />
-            <label for="text">Ditt meddelande:</label><br />
-            <textarea id="text" name="text" rows="5" cols="40"></textarea
-            ><br /><br />
-            <input type="submit" value="Skicka" />
-          </form>
-        </div>
+    <!--"Kontakta oss" knapp och formulär-->
+
+    <div id="contact">
+      <h3>Kontakta oss <i class="fas fa-comment"></i></h3>
+      <div id="contactform">
+        <form onsubmit="contactSoon();">
+          <label for="fname">Ditt förnamn:</label><br />
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Ditt efternamn:</label><br />
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Din e-postadress:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="text">Ditt meddelande:</label><br />
+          <textarea id="text" name="text" rows="5" cols="40"></textarea
+          ><br /><br />
+          <input type="submit" value="Skicka" />
+        </form>
       </div>
     </div>
+    <!-- Header -->
     <div id="header">
       <div id="headercontainer">
-        <!--logga-->
+        <!--Logga-->
         <div id="logo">
           <img
             src="http://tutorial.zylion.se/bilder/ecotire_cropped(1).png"
             alt="Logga"
           />
         </div>
-        <!-- meny-->
+        <!-- Meny-->
         <nav id="navigation">
           <ul>
             <li><a href="#">Hem</a></li>
@@ -60,15 +61,20 @@
         </nav>
       </div>
     </div>
-
+    <!--Delare-->
     <div id="divider"></div>
+    <!--Innehåll-->
     <div id="body">
+      <!--Första sidans knappar-->
       <div id="buttons-container">
-        <!--<a href="#/" class="button"><p>Boka</p></a>-->
-
         <a href="#/" class="button"><i class="far fa-calendar-times"></i></a>
         <a href="#/" class="button"><i class="fas fa-wrench"></i></a>
         <a href="#/" class="button"><i class="fas fa-store"></i> </a>
+      </div>
+      <div id="buttons-text">
+        <h3 class="button-text">Bokning</h3>
+        <h3 class="button-text">Verkstad</h3>
+        <h3 class="button-text">Webbshop</h3>
       </div>
       <div id="content">
         <div class="text">
