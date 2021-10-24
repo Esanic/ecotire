@@ -1,0 +1,45 @@
+#content {
+    display:block;
+}
+
+.text {
+    float: left; 
+    width: 80%;
+    /*border:3px solid red;*/
+}
+
+#products {
+    clear: left;
+    /*border: 3px solid red;*/
+}
+
+.productbox {
+    float: left;
+    width: 29%;
+    min-height: 14vh;
+    border: 1px solid;
+    color: green;
+    padding: 0 2%;
+}
+
+.productbox ul {
+    padding-left: 1em;
+}
+
+#tire1 {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.tireImg {
+    width: 100%
+}
+
+
+.pagination {
+    text-align: center;
+    width: 100%;
+    /*border: 3px solid orange;*/
+
+}
