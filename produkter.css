@@ -5,14 +5,13 @@
 .text {
     float: left; 
     width: 80%;
-    /*border:3px solid red;*/
 }
 
 #products {
     clear: left;
-    /*border: 3px solid red;*/
+    
 }
-
+/*Produkt-rutor*/
 .productbox {
     float: left;
     width: 29%;
@@ -21,11 +20,12 @@
     color: green;
     padding: 0 2%;
 }
-
+/*Information om produkterna*/
 .productbox ul {
     padding-left: 1em;
 }
 
+/*Gäller för alla bildäck, då vi har använt samma bild för alla produkter*/
 #tire1 {
     float: left;
     width: 30px;
@@ -36,10 +36,11 @@
     width: 100%
 }
 
-
 .pagination {
     text-align: center;
     width: 100%;
-    /*border: 3px solid orange;*/
-
+    color: #27a723;
+    text-decoration: none;
+    font: 1rem Arial;
+       
 }
