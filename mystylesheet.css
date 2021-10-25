@@ -229,6 +229,9 @@ body {
   margin: 0 1rem 0 0;
 }
 
+.autoshop {
+}
+
 /*Stilsättning på bakgrunden till formulär*/
 .form {
   background-color: rgb(206, 206, 206);
@@ -355,4 +358,3 @@ body {
 .margintext {
   margin-left: 3rem;
 }
-
