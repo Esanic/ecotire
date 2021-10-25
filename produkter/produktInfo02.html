@@ -12,7 +12,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- Script för "kontakta oss"-formuläret -->
-    <link rel="stylesheet" href="mystylesheet.css" />
+    <link rel="stylesheet" href="../mystylesheet.css" />
+    <link rel="stylesheet" href="../produkter.css" />
+    <link rel="stylesheet" href="../produktInfo.css" />
+
     <script>
       function contactSoon() {
         alert("Vi kontaktar dig inom kort");
@@ -56,11 +59,11 @@
         <!-- Meny-->
         <nav id="navigation">
           <ul>
-            <li><a href="index.html">Hem</a></li>
+            <li><a href="../index.html">Hem</a></li>
             <li>
-              <a href="#">Produkter <i class="fas fa-caret-down"></i></a>
+              <a href="#">Produkter</a>
               <ul id="dropmenu1">
-                <li><a href="produkter01.html">Bildäck</a></li>
+                <li><a href="../produkter01.html">Bildäck</a></li>
                 <li><a href="#/">MC-däck</a></li>
                 <li><a href="#/">Cykeldäck</a></li>
               </ul>
@@ -86,46 +89,37 @@
       <!-- Sidinnehåll -->
       <div id="content">
         <!--Text placerad till höger-->
-        <div class="assistansform">
-          <h1>Vägassistansavtal</h1>
+        <div class="text">
+          <h1>MICHELIN X-ICE SNOW</h1>
           <p>
-            Med Ecotires vägassistansavtal får du tillgång till bärgning dygnet
-            runt. <br />
-            Vi fixar däcken, även på jour till en månadskostnad på endast 237,57
-            kr
+            Michelin X-Ice Snow är ett dubbfritt vinterdäck som är tillpassat
+            extrema vinterförhållande under hela dess livslängd. Ett däck som är
+            tillpassat den nordiska vintern med kortare bromssträcka, lägre
+            rullmotstånd och hög säkerhet. Fån testerna kommer det fram att
+            däcket har bra prestanda på is och snö. X-Ice Snow har tagit ett
+            stort kliv framåt jämfört med föregångaren X-Ice 3.
           </p>
-          <form onsubmit="alert('skickat!');">
-            <label for="name">För och efternamn:</label><br />
-            <input type="text" id="name" /><br />
-            <label for="pass">Personnummer:</label><br />
-            <input type="password" id="pass" /> <br />
-            <label for="email">Email:</label> <br />
-            <input type="email" id="email" /><br />
-            <label for="adress">Gatuadress:</label><br />
-            <input type="text" id="adress" /><br />
-            <label for="postkod">Postkod:</label><br />
-            <input type="text" id="postkod" /> <br />
-            <label for="stad">Stad:</label><br />
-            <input type="text" id="stad" /><br />
-            <label for="phone">Telefonnummer:</label> <br />
-            <input type="tel" id="phone" /> <br />
-            <br />
-            <input type="checkbox" id="avtal" />
-            <label for="avtal"
-              >Jag bekräftar här med att jag tecknar avtal för vägassistans med
-              Ecotire</label
-            ><br />
-            <br />
-            <input type="submit" value="Skicka in" />
-            <input type="reset" value="Återställ" />
-          </form>
+          <p>
+            Nyheten kommer att ersätta serierna Michelin X-Ice Xi3 och Latitude
+            X-Ice Xi3.
+          </p>
         </div>
-
-        <div class="roadpicture">
-          <img src="pics/road.jpg" alt="en bild" width="100%" />
+        <!--Bild placerad till vänster-->
+        <div>
+          <img
+            class="imgTire"
+            src="../pics/dack_produktbild.png"
+            alt="tire_img"
+          />
+        </div>
+        <div id="pagination">
+          <p>
+            <a href="../produkter01.html"> Tillbaka </a>
+          </p>
         </div>
       </div>
     </div>
+
     <!-- Sifot -->
     <section class="footer">
       <div class="container">

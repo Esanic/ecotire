@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <title>Ecotire</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Script för "kontakta oss"-formuläret -->
+  <link rel="stylesheet" href="../mystylesheet.css" />
+  <link rel="stylesheet" href="../produkter.css" />
+  <link rel="stylesheet" href="../produktInfo.css" />
+
+  <script>
+    function contactSoon() {
+      alert("Vi kontaktar dig inom kort");
+    }
+  </script>
+</head>
+
+
+<body>
+  <!--"Kontakta oss" knapp och formulär-->
+  <div id="contact">
+    <div>
+      <h4>
+        <i class="fas fa-comment"><br /></i> Kontakta oss
+      </h4>
+    </div>
+    <div id="contactform">
+      <form onsubmit="contactSoon();">
+        <label for="fname">Ditt förnamn:</label><br />
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Ditt efternamn:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="email">Din e-postadress:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="text">Ditt meddelande:</label><br />
+        <textarea id="text" name="text" rows="5" cols="40"></textarea><br /><br />
+        <input type="submit" value="Skicka" />
+      </form>
+    </div>
+  </div>
+  <!-- Header -->
+  <div id="header">
+    <div id="headercontainer">
+      <!--Logga-->
+      <div id="logo">
+        <img src="http://tutorial.zylion.se/bilder/ecotire_cropped(1).png" alt="Logga" />
+      </div>
+      <!-- Meny-->
+      <nav id="navigation">
+        <ul>
+          <li><a href="../index.html">Hem</a></li>
+          <li><a href="#">Produkter</a>
+            <ul id="dropmenu1">
+              <li><a href="../produkter01.html">Bildäck</a></li>
+              <li><a href="#/">MC-däck</a></li>
+              <li><a href="#/">Cykeldäck</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Tjänster</a>
+            <ul id="dropmenu2">
+              <li><a href="verkstad.html">Verkstad</a></li>
+              <li><a href="dackhotell.html">Däckhotell</a></li>
+              <li><a href="assistans.html">Vägassistans</a></li>
+              <li><a href="atervinning.html">Återvinning</a></li>
+            </ul>
+          </li>
+          <li><a href="https://ecotire.simplybook.it/v2/">Bokning</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--Delare-->
+  <div id="divider"></div>
+  <!--Innehåll-->
+  <div id="body">
+    <!-- Sidinnehåll -->
+    <div id="content">
+      <!--Text placerad till höger-->
+      <div class="text">
+        <h1>CONTIPREMIUMCONTACT 6</h1>
+        <p>
+          Continental PremiumContact 6 är däcket där flera världar möts. Däcket har ärvt komforten från sin föregångare
+          PremiumContact 5 och körglädjen från SportContact 5. Däcket är framtaget för att ge mycket körglädje utan att
+          kompromissa med säkerhet och komfort. Med hög säkerhetsfokus ger däckets nya design och gummiblandning bästa
+          möjliga bromsförmåga på både torr och våt asfalt.
+        </p>
+        <p>
+          Ingenjörerna bakom däcket har förbättrat rullmotstånd mot dess föregångare, vilket ger det bättre komfort
+          och grepp. Detta genom ett nytt slitbanemönster och gummiblandning som ger däcket 15 procent längre livslängd
+          och 10 procent lägre bullernivå.
+        </p>
+        <p>
+          PremiumContact 6 presterade bäst av alla däcken på torr asfalt i Aftonbladets test i mars 2018, däcket var
+          väldigt stabilt med ett fantastiskt grepp även i de extrema körsituationerna.
+        </p>
+      </div>
+      <!--Bild placerad till vänster-->
+      <div>
+
+        <img class="imgTire" src="../pics/continental.png" alt="tire_img">
+      </div>
+      <div id="pagination">
+        <p>
+          <a href="../produkter01.html">
+            Tillbaka
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Sifot -->
+  <section class="footer">
+    <div class="container">
+      <!--Sidfotsmeny-->
+      <navigation class="list1">
+        <ul>
+          <li><a href="#/">Om oss</a></li>
+          <li><a href="#/">Lediga jobb</a></li>
+          <li><a href="#/">Miljöpolicy</a></li>
+        </ul>
+      </navigation>
+      <!--Sociala medier knappar-->
+      <div class="socials">
+        <ul>
+          <li>
+            <a href="#/"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#/"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#/"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!--Kontaktuppgifter-->
+      <div class="list2">
+        <ul>
+          <li><a href="#/">Öppettider Måndag-Fredag 8-18</a></li>
+          <li><a href="#/">Storgatan 1, 12345, Staden</a></li>
+          <li><a href="#/">0701233445</a></li>
+          <li><a href="#/">Kontakt@ecotire.se</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Copyright text-->
+    <div class="copy">Copyright &copy Ecotire 2021</div>
+  </section>
+</body>
+
+</html>
