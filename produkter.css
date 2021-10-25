@@ -23,14 +23,7 @@
 /*Information om produkterna*/
 .productbox ul {
     padding-left: 1em;
-    height: 4rem;
-}
-
-/*Gäller för alla bildäck, då vi har använt samma bild för alla produkter*/
-#tire1 {
-    float: left;
-    width: 30px;
-    height: 30px;
+    min-height: 5rem;
 }
 
 .tireImg {
