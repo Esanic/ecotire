@@ -417,29 +417,6 @@ a:visited {
   margin: 0;
 }
 
-.assistansform {
-  background-color: lightgray;
-  padding: 1rem;
-  font: 12px arial;
-  border-radius: 8px;
-  margin-right: 5rem;
-  margin-top: 1rem;
-}
-.roadpicture {
-  float: right;
-  width: 50%;
-  padding: 3rem 0 0 0;
-}
-.recyclepicture {
-  float: right;
-  margin-left: 5rem;
-}
-.centered {
-  text-align: center;
-}
-.margintext {
-  margin-left: 3rem;
-}
 #jobb-content {
   font-size: 1.2rem;
   width: 75%;
