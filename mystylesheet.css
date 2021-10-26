@@ -425,12 +425,11 @@ a:visited {
   background-color: white;
   padding: 1rem;
   box-shadow: 0px 0 12px 0 rgba(0, 0, 0, 0.15);
-  
 }
 
 .jobbannons { 
   margin: 3rem auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
   border: 1px solid black;
   width: 75%;
   height: 20rem;
@@ -439,7 +438,7 @@ a:visited {
 }
 /*Text behållare*/
 .jobbannons-text {
-  width: 55%;
+  flex-basis: 40%;
   margin: auto;
   
 }
@@ -448,6 +447,10 @@ a:visited {
 }
 
 .jobbannons-bild {
-  width: 35%;
+  flex-basis: 40%;
   margin: auto;
+}
+
+.jobbannons-bild img {
+  width: 100%;
 }
