@@ -425,10 +425,9 @@ a:visited {
   background-color: white;
   padding: 1rem;
   box-shadow: 0px 0 12px 0 rgba(0, 0, 0, 0.15);
-  
 }
 
-.jobbannons { 
+.jobbannons {
   margin: 3rem auto;
   padding: 2rem 0;
   border: 1px solid black;
@@ -441,9 +440,8 @@ a:visited {
 .jobbannons-text {
   width: 55%;
   margin: auto;
-  
 }
-.jobbannons h1{
+.jobbannons h1 {
   font-size: 1.5rem;
 }
 
