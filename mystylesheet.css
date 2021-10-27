@@ -256,7 +256,7 @@ a:visited {
 
 .offer h2 {
   padding: 0;
-  margin: 1rem;
+  margin: auto 1rem;
   height: 1.5rem;
 }
 /* Stilsättning av behållaren till ikonen av tjänster*/
@@ -451,5 +451,24 @@ a:visited {
 }
 
 .jobbannons-bild img {
+  width: 100%;
+}
+
+.bild50 {
+  width: 50%;
+}
+.bild60 {
+  width: 60%;
+}
+.bild70 {
+  width: 70%;
+}
+.bild80 {
+  width: 80%;
+}
+.bild90 {
+  width: 90%;
+}
+.bild100 {
   width: 100%;
 }
