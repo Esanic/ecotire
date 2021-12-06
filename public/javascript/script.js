@@ -55,13 +55,13 @@ function showDetails() {
     const request = new XMLHttpRequest();
 
     request.open('GET',"./json/contact-input.json", true);
-    console.log("3");
+    
     request.onload = function () {
-        console.log("1");
+        
         const data = JSON.parse(this.response);
 
         for (let i = data.length-1; i >= 0; i--) {
-            console.log("2");
+            
             const bundleContainer = document.createElement("div");
             bundleContainer.setAttribute("class", "bundleContainer");
 
