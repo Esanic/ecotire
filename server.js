@@ -30,6 +30,12 @@ app.post("/admin-login", async function(req, res) {
         if(req.body.adminPass === adminAccount.adminPass){
             res.sendFile(path.join(__dirname, "login/contactDetails.html"))
         }
+        else{
+            res.redirect("/html/admin.html")
+        }
+    }
+    else{
+        res.redirect("/html/admin.html")
     }
 });
 

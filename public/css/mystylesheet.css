@@ -230,7 +230,8 @@ body {
 }
 
 /*Text behållare*/
-.text {
+.text,
+#texti {
   float: left;
   width: 50%;
   margin: 0 1rem 0 0;
@@ -495,4 +496,13 @@ a:visited {
 
 .infoContainer {
   flex-basis: 40%;
+}
+
+.banner {
+  height: 9rem;
+  width: 16rem;
+}
+
+#texti {
+  width: 100%;
 }
