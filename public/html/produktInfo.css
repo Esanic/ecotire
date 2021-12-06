@@ -1,0 +1,21 @@
+#content {
+    display:block;
+}
+
+.text {
+    float: right; 
+    width: 50%;
+}
+.imgTire{
+    width:45%;
+}
+#pagination{
+    text-align: center;
+    width: 100%;
+    color: #27a723;
+    text-decoration: none;
+    font: 1rem Arial;
+    
+}
+
+

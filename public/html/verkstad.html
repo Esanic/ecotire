@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Ecotire</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Script för "kontakta oss"-formuläret -->
+    <link rel="stylesheet" href="mystylesheet.css" />
+    <script>
+      function contactSoon() {
+        alert("Vi kontaktar dig inom kort");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--"Kontakta oss" knapp och formulär-->
+    <div id="contact">
+      <div>
+        <h4>
+          <i class="fas fa-comment"><br /></i> Kontakta oss
+        </h4>
+      </div>
+      <div id="contactform">
+        <form action="/contact" method="POST" onsubmit="contactSoon();">
+          <label for="fname">Ditt förnamn:</label><br />
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Ditt efternamn:</label><br />
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Din e-postadress:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="text">Ditt meddelande:</label><br />
+          <textarea id="text" name="text" rows="5" cols="40"></textarea
+          ><br /><br />
+          <input type="submit" value="Skicka" />
+        </form>
+      </div>
+    </div>
+    <!-- Header -->
+    <div id="header">
+      <div id="headercontainer">
+        <!--Logga-->
+        <div id="logo">
+          <img
+            src="http://tutorial.zylion.se/bilder/ecotire_cropped(1).png"
+            alt="Logga"
+          />
+        </div>
+        <!-- Meny-->
+        <nav id="navigation">
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li>
+              <a href="#">Produkter <i class="fas fa-caret-down"></i></a>
+              <ul id="dropmenu1">
+                <li><a href="produkter01.html">Bildäck</a></li>
+                <li><a href="#/">MC-däck</a></li>
+                <li><a href="#/">Cykeldäck</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Tjänster <i class="fas fa-caret-down"></i></a>
+              <ul id="dropmenu2">
+                <li><a href="verkstad.html">Verkstad</a></li>
+                <li><a href="dackhotell.html">Däckhotell</a></li>
+                <li><a href="assistans.html">Vägassistans</a></li>
+                <li><a href="atervinning.html">Återvinning</a></li>
+              </ul>
+            </li>
+            <li><a href="https://ecotire.simplybook.it/v2/">Bokning</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--Delare-->
+    <div id="divider-verkstad"></div>
+    <!--Innehåll-->
+    <div id="body">
+      <!-- Sidinnehåll -->
+      <div id="content">
+        <!--Text placerad till höger-->
+        <div class="text">
+          <h1>Verkstad</h1>
+          <p>
+            Vår verkstad är certifierad enligt standarden Godkänd Bilverkstad.
+            Det innebär att vårt arbete inom kvalitet, miljö och säkerhet noga
+            granskas av en oberoende tredje part. För din och vår skull ska det
+            alltid kännas tryggt att lämna in bilen hos oss.
+          </p>
+          <p>
+            Vi på Ecotire har specialiserat oss på allt som har med däck att
+            göra. Hos oss blir alltid däckbytet enkelt och tillförlitligt. Vi
+            erbjuder enkel bokning, tillförlitliga bokningstider till fasta
+            priser. Dina däck byts alltid av en utbildad och erfaren mekaniker.
+            Vi byter dina däck enligt tidsplanen medan du väntar i vår bekväma
+            kundmottagning med gratis förfriskningar och WiFi.
+          </p>
+
+          <p>
+            Du kan boka tid hos oss
+            <a href="https://ecotire.simplybook.it/v2/">här</a>
+          </p>
+          <div class="autoshop">
+            <div class="offer">
+              <div class="autoshopicon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h2>Däckservice</h2>
+
+              <div class="autoshopitems">
+                <ul>
+                  <li><i class="fas fa-check"></i> Hjulinställning</li>
+                  <li><i class="fas fa-check"></i> Hjulskifte</li>
+                  <li>
+                    <i class="fas fa-check"></i> Däckinspektion och rengöring
+                  </li>
+                  <li><i class="fas fa-check"></i> Däckreparation</li>
+                  <li><i class="fas fa-check"></i> Hjulbalansering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="offer">
+              <div class="autoshopicon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h2>Kundservicetjänster</h2>
+
+              <div class="autoshopitems">
+                <ul>
+                  <li><i class="fas fa-check"></i> Lånebil</li>
+                  <li><i class="fas fa-check"></i> Kaffe medan du väntar</li>
+                  <li><i class="fas fa-check"></i> Gratis Wifi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2>Vi som jobbar i verkstaden</h2>
+          <div class="mechaniccontainer">
+            <div class="mechanic">
+              <h4>Joakim Tegnell</h4>
+              <p>Ägare</p>
+              <img
+                class="bild100"
+                src="pics/mechanics/Joakim.jpg"
+                alt="Joakim"
+              />
+            </div>
+            <div class="mechanic">
+              <h4>Kalle Häggkvist</h4>
+              <p>Däcktekniker</p>
+              <img class="bild100" src="pics/mechanics/Kalle.jpg" alt="Kalle" />
+            </div>
+            <div class="mechanic">
+              <h4>Tomas Löfvén</h4>
+              <p>Däcktekniker</p>
+              <img class="bild100" src="pics/mechanics/Tomas.jpg" alt="Tomas" />
+            </div>
+          </div>
+        </div>
+        <!--Bild placerad till höger-->
+        <div class="bild">
+          <img class="bild70" src="pics/tirechange.jpg" alt="en bild" />
+        </div>
+      </div>
+    </div>
+    <!-- Sifot -->
+    <footer class="footer">
+      <div class="container">
+        <!--Sidfotsmeny-->
+        <nav class="list1">
+          <ul>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="ledigajobb.html">Lediga jobb</a></li>
+            <li><a href="miljopolicy.html">Miljöpolicy</a></li>
+          </ul>
+        </nav>
+        <!--Sociala medier knappar-->
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="#/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#/"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#/"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--Kontaktuppgifter-->
+        <div class="list2">
+          <ul>
+            <li><a href="#/">Öppettider Måndag-Fredag 8-18</a></li>
+            <li><a href="#/">Storgatan 1, 12345, Staden</a></li>
+            <li><a href="#/">0701233445</a></li>
+            <li><a href="#/">Kontakt@ecotire.se</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Copyright text-->
+      <div class="copy">Copyright &copy; Ecotire 2021</div>
+    </footer>
+  </body>
+</html>

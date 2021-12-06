@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Ecotire</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Script för "kontakta oss"-formuläret -->
+    <link rel="stylesheet" href="mystylesheet.css" />
+    <script>
+      function contactSoon() {
+        alert("Vi kontaktar dig inom kort");
+      }
+      function tireHotell() {
+        alert(
+          "Tack för din bokning! Vi återkommer inom kort med tid för inlämning av dina däck"
+        );
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--"Kontakta oss" knapp och formulär-->
+    <div id="contact">
+      <div>
+        <h4>
+          <i class="fas fa-comment"><br /></i> Kontakta oss
+        </h4>
+      </div>
+      <div id="contactform">
+        <form action="/contact" method="POST" onsubmit="contactSoon();">
+          <label for="fname">Ditt förnamn:</label><br />
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Ditt efternamn:</label><br />
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Din e-postadress:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="text">Ditt meddelande:</label><br />
+          <textarea id="text" name="text" rows="5" cols="40"></textarea
+          ><br /><br />
+          <input type="submit" value="Skicka" />
+        </form>
+      </div>
+    </div>
+    <!-- Header -->
+    <div id="header">
+      <div id="headercontainer">
+        <!--Logga-->
+        <div id="logo">
+          <img
+            src="http://tutorial.zylion.se/bilder/ecotire_cropped(1).png"
+            alt="Logga"
+          />
+        </div>
+        <!-- Meny-->
+        <nav id="navigation">
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li>
+              <a href="#">Produkter <i class="fas fa-caret-down"></i></a>
+              <ul id="dropmenu1">
+                <li><a href="produkter01.html">Bildäck</a></li>
+                <li><a href="#/">MC-däck</a></li>
+                <li><a href="#/">Cykeldäck</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Tjänster <i class="fas fa-caret-down"></i></a>
+              <ul id="dropmenu2">
+                <li><a href="verkstad.html">Verkstad</a></li>
+                <li><a href="dackhotell.html">Däckhotell</a></li>
+                <li><a href="assistans.html">Vägassistans</a></li>
+                <li><a href="atervinning.html">Återvinning</a></li>
+              </ul>
+            </li>
+            <li><a href="https://ecotire.simplybook.it/v2/">Bokning</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--Delare-->
+    <div id="divider-tirehotel"></div>
+    <!--Innehåll-->
+    <div id="body">
+      <!-- Sidinnehåll -->
+      <div id="content">
+        <!--Text placerad till höger-->
+        <div class="text">
+          <h1>Däckhotell</h1>
+          <p>
+            En av de viktigaste komponenterna för bilen är däcken. Har du dåliga
+            däck har du dåligt väggrepp och då kan bilen vara rentav farlig för
+            vägen. Därför är det viktigt att förvara dem rätt!
+          </p>
+          <p>
+            När du vill säsongsförvara dina däck och få mer plats i ditt garage
+            tar vi gärna emot dina däck på Ecotires däckhotell.
+          </p>
+          <p>
+            Vi erbjuder tillförlitlig och säker förvaring av däck under optimala
+            förhållanden. Vi tvättar och förvarar dina vinterdäck under
+            sommarsäsongen och dina sommardäck på vintern. När det är dags att
+            byta däck får du ett tidbokningsförslag via SMS som du enkelt kan
+            bekräfta. Behöver du ändra din tid kan du enkelt göra detta på vår
+            hemsidan. Vi byter sedan däck på din bil och du kan känna sig säker
+            att däckens skick och lufttryck är kontrollerade - Bekvämt, säkert
+            och enkelt!
+          </p>
+          <p>
+            Fyll i formuläret under så kontaktar vi dig för tid då du kan lämna
+            in dina däck.
+          </p>
+          <div class="form">
+            <form onsubmit="tireHotell();">
+              <label for="fornamn">Ditt för- och efternamn:</label><br />
+              <input type="text" id="fornamn" name="fornamn" /><br /><br />
+              <label for="epost">Din e-postadress:</label><br />
+              <input type="email" id="epost" name="epost" /><br /><br />
+              <label for="tele">Ditt mobilnummer:</label><br />
+              <input type="tel" id="tele" name="tele" /><br /><br />
+              <label for="regnr">Din bils registreringsnummer:</label><br />
+              <input type="text" id="regnr" name="regnr" /><br /><br />
+              <p>
+                Vänligen ange vilka säsonger du vill förvara dina däck hos oss
+              </p>
+              <br />
+              <input type="checkbox" id="sommar" name="sommar" value="sommar" />
+              <label for="sommar"> Sommarsäsong</label><br />
+              <input type="checkbox" id="vinter" name="vinter" value="vinter" />
+              <label for="vinter"> Vintersäsong</label><br />
+              <h5>Villkor</h5>
+              <p>
+                Jag förbinder mig här med att förvara mina däck på Ecotires
+                däckhotell de säsonger jag angett ovanför mot en kostnad på
+                337.13 kr per säsong.<br />
+                Om jag inte uppfyller mitt åtagande ger jag Ecotire rätt att
+                debitera mig dubbla kostnaden för vad en säsong skulle ha kostat
+                och jag är införstådd i att mina däcks plats upplåtes till annan
+                kund.
+              </p>
+              <input type="checkbox" id="accept" name="accept" /><label
+                for="accept"
+                >Jag är införstådd med villkoren ovan och godkänner dem</label
+              >
+              <br /><br />
+              <input type="submit" value="Skicka in" />
+            </form>
+          </div>
+        </div>
+        <!--Bild placerad till höger-->
+        <div class="bild">
+          <img class="bild70" src="pics/dackhotell.jpg" alt="en bild" />
+        </div>
+      </div>
+    </div>
+    <!-- Sifot -->
+    <footer class="footer">
+      <div class="container">
+        <!--Sidfotsmeny-->
+        <nav class="list1">
+          <ul>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="ledigajobb.html">Lediga jobb</a></li>
+            <li><a href="miljopolicy.html">Miljöpolicy</a></li>
+          </ul>
+        </nav>
+        <!--Sociala medier knappar-->
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="#/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#/"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#/"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--Kontaktuppgifter-->
+        <div class="list2">
+          <ul>
+            <li><a href="#/">Öppettider Måndag-Fredag 8-18</a></li>
+            <li><a href="#/">Storgatan 1, 12345, Staden</a></li>
+            <li><a href="#/">0701233445</a></li>
+            <li><a href="#/">Kontakt@ecotire.se</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Copyright text-->
+      <div class="copy">Copyright &copy; Ecotire 2021</div>
+    </footer>
+  </body>
+</html>

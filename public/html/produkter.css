@@ -1,0 +1,40 @@
+#content {
+    display:block;
+}
+
+.text {
+    float: left; 
+    width: 80%;
+}
+
+#products {
+    clear: left;
+    
+}
+/*Produkt-rutor*/
+.productbox {
+    float: left;
+    width: 29%;
+    min-height: 14vh;
+    border: 1px solid;
+    color: green;
+    padding: 0 2%;
+}
+/*Information om produkterna*/
+.productbox ul {
+    padding-left: 1em;
+    min-height: 5rem;
+}
+
+.tireImg {
+    width: 100%
+}
+
+.pagination {
+    text-align: center;
+    width: 100%;
+    color: #27a723;
+    text-decoration: none;
+    font: 1rem Arial;
+       
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Ecotire</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Script för "kontakta oss"-formuläret -->
+    <link rel="stylesheet" href="../mystylesheet.css" />
+    <link rel="stylesheet" href="../produkter.css" />
+    <link rel="stylesheet" href="../produktInfo.css" />
+
+    <script>
+      function contactSoon() {
+        alert("Vi kontaktar dig inom kort");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--"Kontakta oss" knapp och formulär-->
+    <div id="contact">
+      <div>
+        <h4>
+          <i class="fas fa-comment"><br /></i> Kontakta oss
+        </h4>
+      </div>
+      <div id="contactform">
+        <form action="/contact" method="POST" onsubmit="contactSoon();">
+          <label for="fname">Ditt förnamn:</label><br />
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Ditt efternamn:</label><br />
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Din e-postadress:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="text">Ditt meddelande:</label><br />
+          <textarea id="text" name="text" rows="5" cols="40"></textarea
+          ><br /><br />
+          <input type="submit" value="Skicka" />
+        </form>
+      </div>
+    </div>
+    <!-- Header -->
+    <div id="header">
+      <div id="headercontainer">
+        <!--Logga-->
+        <div id="logo">
+          <img
+            src="http://tutorial.zylion.se/bilder/ecotire_cropped(1).png"
+            alt="Logga"
+          />
+        </div>
+        <!-- Meny-->
+        <nav id="navigation">
+          <ul>
+            <li><a href="../index.html">Hem</a></li>
+            <li>
+              <a href="#">Produkter</a>
+              <ul id="dropmenu1">
+                <li><a href="../produkter01.html">Bildäck</a></li>
+                <li><a href="#/">MC-däck</a></li>
+                <li><a href="#/">Cykeldäck</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Tjänster</a>
+              <ul id="dropmenu2">
+                <li><a href="../verkstad.html">Verkstad</a></li>
+                <li><a href="../dackhotell.html">Däckhotell</a></li>
+                <li><a href="../assistans.html">Vägassistans</a></li>
+                <li><a href="../atervinning.html">Återvinning</a></li>
+              </ul>
+            </li>
+            <li><a href="https://ecotire.simplybook.it/v2/">Bokning</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--Delare-->
+    <div id="divider"></div>
+    <!--Innehåll-->
+    <div id="body">
+      <!-- Sidinnehåll -->
+      <div id="content">
+        <!--Text placerad till höger-->
+        <div class="text">
+          <h1>NOKIAN HAKKA BLUE 2</h1>
+          <p>
+            Nokian har verkligen använt alla sina senaste tekniker i detta nya
+            sommardäck.
+            <b>"Dry touch"</b> är en teknik som leder vatten från de mindre
+            spåren i däcken till huvudspåren längst ribbans mittspår. Det är här
+            vattenplaningen sker bäst för samtliga sommardäck och att Nokian nu
+            effektivt kan leda vattnet till dessa lammeller skapar en trygghet
+            vid eventuell vattenplaning.
+          </p>
+
+          <p>
+            Ett annat exempel är <b>"Silent Groove Design"</b>
+            som är en uppfinning plancerad på väggarna av däckets längsgående
+            ribbor för att öka komforten. De små hålen styr luftflödet som små
+            virvelvindar och minskar på så vis ljudet. Det klassiskt "vinande"
+            ljudet försvinner på så vis, detta ljud hörs utanför och inne inne i
+            bilen vilket alltså i princip försvinner. En annan fördel med
+            tekniken är att det minskar luftmotståndet vilket kyler ner
+            slitbanan och på så vis gör att däcket håller längre.
+          </p>
+          <p>
+            Teknoligin <b>"Silent sidewall"</b>är även den till för att motverka
+            däckljudet genom att minska vibrationerna som skapas via slitbanan.
+            Hakka Blue 2 är ett utmärkt däck för vårt blandade nordiska klimat
+            och kommer säkerligen vara med bland testvinnarna i flera års tid.
+            Till att börja med kommer däcket lanseras i 15-17".
+          </p>
+        </div>
+        <!--Bild placerad till vänster-->
+        <div>
+          <img class="imgTire" src="../pics/nokian.png" alt="tire_img" />
+        </div>
+        <div id="pagination">
+          <p>
+            <a href="../produkter01.html"> Tillbaka </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sifot -->
+    <footer class="footer">
+      <div class="container">
+        <!--Sidfotsmeny-->
+        <nav class="list1">
+          <ul>
+            <li><a href="#/">Om oss</a></li>
+            <li><a href="#/">Lediga jobb</a></li>
+            <li><a href="#/">Miljöpolicy</a></li>
+          </ul>
+        </nav>
+        <!--Sociala medier knappar-->
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="#/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#/"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#/"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--Kontaktuppgifter-->
+        <div class="list2">
+          <ul>
+            <li><a href="#/">Öppettider Måndag-Fredag 8-18</a></li>
+            <li><a href="#/">Storgatan 1, 12345, Staden</a></li>
+            <li><a href="#/">0701233445</a></li>
+            <li><a href="#/">Kontakt@ecotire.se</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Copyright text-->
+      <div class="copy">Copyright &copy; Ecotire 2021</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Ecotire</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Script för "kontakta oss"-formuläret -->
+    <link rel="stylesheet" href="mystylesheet.css" />
+    <link rel="stylesheet" href="produkter.css" />
+    <script>
+      function contactSoon() {
+        alert("Vi kontaktar dig inom kort");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--"Kontakta oss" knapp och formulär-->
+    <div id="contact">
+      <div>
+        <h4>
+          <i class="fas fa-comment"><br /></i> Kontakta oss
+        </h4>
+      </div>
+      <div id="contactform">
+        <form action="/contact" method="POST" onsubmit="contactSoon();">
+          <label for="fname">Ditt förnamn:</label><br />
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Ditt efternamn:</label><br />
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Din e-postadress:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="text">Ditt meddelande:</label><br />
+          <textarea id="text" name="text" rows="5" cols="40"></textarea
+          ><br /><br />
+          <input type="submit" value="Skicka" />
+        </form>
+      </div>
+    </div>
+    <!-- Header -->
+    <div id="header">
+      <div id="headercontainer">
+        <!--Logga-->
+        <div id="logo">
+          <img
+            src="http://tutorial.zylion.se/bilder/ecotire_cropped(1).png"
+            alt="Logga"
+          />
+        </div>
+        <!-- Meny-->
+        <nav id="navigation">
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li>
+              <a href="#">Produkter</a>
+              <ul id="dropmenu1">
+                <li><a href="produkter01.html">Bildäck</a></li>
+                <li><a href="#/">MC-däck</a></li>
+                <li><a href="#/">Cykeldäck</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Tjänster</a>
+              <ul id="dropmenu2">
+                <li><a href="verkstad.html">Verkstad</a></li>
+                <li><a href="dackhotell.html">Däckhotell</a></li>
+                <li><a href="assistans.html">Vägassistans</a></li>
+                <li><a href="atervinning.html">Återvinning</a></li>
+              </ul>
+            </li>
+            <li><a href="https://ecotire.simplybook.it/v2/">Bokning</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--Delare-->
+    <div id="divider"></div>
+    <!--Innehåll-->
+    <div id="body">
+      <!-- Sidinnehåll -->
+      <div id="content">
+        <!--Text placerad längst upp-->
+        <div class="text">
+          <h1>Välj miljödäck</h1>
+          <p>
+            Köp miljödäck med lågt rullmotstånd, spara bränsle och bli en
+            miljövänlig bilist.
+          </p>
+
+          <p>
+            De senaste åren har däcktillverkarna blivit allt bättre på att
+            tillverka däck som hjälper dig att minimera däckens miljöpåverkan.
+            Vi på EcoTire vill gärna hjälpa dig att välja däck så att vi
+            tillsammans kan hjälpas åt att minska miljöpåverkan så mycket som
+            möjligt! Håll utkik efter vår miljöstämpel.
+          </p>
+          <p>
+            Biltillverkarna har redan ställt in sig i miljöledet och börjat
+            producera miljövänliga bilar på löpande band. Bränslesnålare bilar
+            är något alla börjar fundera över med tanke på att bensinpriset nått
+            nya höjder, 15kr+ / liter. Det medför att bilister kan spara
+            tusenlappar på bränslesnåla bilar varje år.
+          </p>
+          <p>
+            Att välja miljövänliga däck – miljödäck - handlar om att minimera
+            miljöpåverkan. En stor del av bränsleförbrukningen styrs dock utav
+            vilka däck man använder på sin bil. Att välja miljödäck handlar om
+            att minimera miljöpåverkan bilisterna tillför. Allt från lufttryck,
+            rullmotstånd, bränsleförbrukning, HA-oljor och nitrogen till
+            däckåtervinning påverkar miljön.
+          </p>
+          <br />
+        </div>
+
+        <!--Bild placerad till höger-->
+
+        <!--
+        <div class="bild">
+          <img
+            src="https://cdn.mos.cms.futurecdn.net/CAZ6JXi6huSuN4QGE627NR.jpg"
+            alt="en bild"
+            width="100%"
+          />
+        </div>
+       -->
+
+        <!--produktrutor -->
+        <div id="products">
+          <!--Däck 1-->
+          <div class="productbox" style="clear: left; border: solid 1px black">
+            <h4>MICHELIN X-ICE NORTH 4</h4>
+
+            <a href="produkter/produktInfo01.html">
+              <img
+                class="tireImg"
+                src="pics/dack_produktbild.png"
+                alt="tire_img"
+            /></a>
+
+            <ul>
+              <li>Utmärkt kontroll på vinterväglag</li>
+              <li>Låg bränsleförbrukning</li>
+              <li>Väldigt bra bromsningsförmåga på is</li>
+            </ul>
+          </div>
+
+          <!--Däck 2-->
+          <div class="productbox" style="border: solid 1px black">
+            <h4>MICHELIN X-ICE SNOW</h4>
+            <div>
+              <a href="produkter/produktInfo02.html">
+                <img
+                  class="tireImg"
+                  src="pics/dack_produktbild.png"
+                  alt="tire_img"
+              /></a>
+            </div>
+            <ul>
+              <li>2:a plats i Teknikens Värld 2020</li>
+              <li>Nyhet från Michelin vintern 2020!</li>
+              <li>Låg bränsleförbrukning</li>
+            </ul>
+          </div>
+
+          <!--Däck 3-->
+          <div class="productbox" style="border: solid 1px black">
+            <h4>GREEN-MAX HP010</h4>
+            <div>
+              <a href="produkter/produktInfo03.html">
+                <img class="tireImg" src="pics/greenmax.jpg" alt="tire_img"
+              /></a>
+            </div>
+            <ul>
+              <li>Ett budgetdäck</li>
+              <li>Fiins i många olika dimensioner inom 14-18tum.</li>
+              <li>Bra betyg i våtgrepp.</li>
+            </ul>
+          </div>
+
+          <!--Däck 4-->
+          <div class="productbox" style="border: solid 1px black">
+            <h4>MICHELIN X-ICE XI3</h4>
+            <div>
+              <a href="produkter/produktInfo04.html">
+                <img
+                  class="tireImg"
+                  src="pics/dack_produktbild.png"
+                  alt="tire_img"
+              /></a>
+            </div>
+            <ul>
+              <li>Andraplats i Auto Motor däcktest 2015!</li>
+              <li>Utmärkt kontroll på isiga vägbanor</li>
+              <li>Minskar risken för vattenplaning</li>
+            </ul>
+          </div>
+
+          <!--Däck 5-->
+          <div class="productbox" style="border: solid 1px black">
+            <h4>GOODYEAR EFFICIENTGRIP 2</h4>
+            <div>
+              <a href="produkter/produktInfo05.html">
+                <img
+                  class="tireImg"
+                  src="pics/goodyear-dack.jpg"
+                  alt="tire_img"
+              /></a>
+            </div>
+            <ul>
+              <li>Högprestandadäck</li>
+              <li>Kortare bromssträcka på vått underlag</li>
+              <li>Ökt livslängd (Mileage Plus Technology)</li>
+            </ul>
+          </div>
+
+          <!--Däck 6-->
+          <div class="productbox" style="border: solid 1px black">
+            <h4>CONTIPREMIUMCONTACT 6</h4>
+            <div>
+              <a href="produkter/produktInfo06.html">
+                <img class="tireImg" src="pics/continental.png" alt="tire_img"
+              /></a>
+            </div>
+            <ul>
+              <li>Testvinnare i Vi Bilägares Däcktest 2017</li>
+              <li>Följsamt och precist för den bästa körupplevelsen</li>
+              <li>Längre livslängd</li>
+            </ul>
+          </div>
+
+          <!--Däck 7-->
+          <div class="productbox" style="border: solid 1px black">
+            <h4>NOKIAN HAKKA BLUE 2</h4>
+            <div>
+              <a href="produkter/produktInfo07.html">
+                <img class="tireImg" src="pics/nokian.png" alt="tire_img"
+              /></a>
+            </div>
+            <ul>
+              <li>Anpassat för medelstora personbilar</li>
+              <li>"Dry Touch" - För säkrare köregenskap på våt väg</li>
+              <li>Hög komfort och tyst</li>
+            </ul>
+          </div>
+
+          <!--Däck 8-->
+          <div class="productbox" style="border: solid 1px black">
+            <h4>BRIDGESTONE TURANZA T005</h4>
+            <div>
+              <a href="produkter/produktInfo08.html">
+                <img class="tireImg" src="pics/Bridgestone.jpg" alt="tire_img"
+              /></a>
+            </div>
+            <ul>
+              <li>Delad 6:e plats i Aftonbladets dädktest 2020!</li>
+              <li>Utmärkt våtprestanda</li>
+              <li>Väldigt bra slitstyrka</li>
+            </ul>
+          </div>
+
+          <!--Däck 9-->
+          <div class="productbox" style="border: solid 1px black">
+            <h4>MICHELIN PRIMACY 4</h4>
+            <div>
+              <a href="produkter/produktInfo09.html">
+                <img
+                  class="tireImg"
+                  src="pics/dack_produktbild.png"
+                  alt="tire_img"
+              /></a>
+            </div>
+            <ul>
+              <li>Överlägsen säkerhet från första till sista milen</li>
+              <li>Enastående prestanda</li>
+              <li>Lång livslängd</li>
+            </ul>
+          </div>
+
+          <p style="clear: left; color: transparent"></p>
+        </div>
+        <div class="pagination">
+          <p>
+            1/2
+            <a href="produkter02.html"> Nästa </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Sifot -->
+    <footer class="footer">
+      <div class="container">
+        <!--Sidfotsmeny-->
+        <nav class="list1">
+          <ul>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="ledigajobb.html">Lediga jobb</a></li>
+            <li><a href="miljopolicy.html">Miljöpolicy</a></li>
+          </ul>
+        </nav>
+        <!--Sociala medier knappar-->
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="#/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#/"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#/"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--Kontaktuppgifter-->
+        <div class="list2">
+          <ul>
+            <li><a href="#/">Öppettider Måndag-Fredag 8-18</a></li>
+            <li><a href="#/">Storgatan 1, 12345, Staden</a></li>
+            <li><a href="#/">0701233445</a></li>
+            <li><a href="#/">Kontakt@ecotire.se</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Copyright text-->
+      <div class="copy">Copyright &copy; Ecotire 2021</div>
+    </footer>
+  </body>
+</html>

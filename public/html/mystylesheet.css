@@ -1,0 +1,474 @@
+/*Anpassning till hela <body>*/
+body {
+  font: 14px Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Kontakta oss-knapp*/
+#contact {
+  position: fixed;
+  width: 6rem;
+  background-image: linear-gradient(#1d861a, #27a723, #27a723, #1d861a);
+  border-radius: 0 8px 8px 0;
+  text-align: center;
+  top: 16rem;
+  color: white;
+  font: 1rem;
+  float: left;
+  z-index: 1000;
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*Stilsättning på kontakta oss-knappen vid mus över*/
+#contact:hover {
+  background-image: linear-gradient(#1d861a, #27a723, #27a723, #1d861a);
+  box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.35);
+}
+/*Stilsättning på pratbubblan i kontakta oss-knappen*/
+#contact .fa-comment {
+  font-size: 2.5rem;
+  padding: 0 0 0 0.2rem;
+}
+#contact h4 {
+  margin: 0.5rem;
+}
+
+/*Kontakta oss-formuläret*/
+#contactform {
+  display: none;
+  min-width: 15rem;
+  background-color: white;
+  color: black;
+  text-align: left;
+  border-radius: 0 8px 8px 0;
+  border: 1px solid black;
+  padding: 1rem;
+  font: 12px arial;
+}
+
+/*Stilsättning för att framhäva kontakta oss-formuläret vid mus över kontakta oss-knapp*/
+#contact:hover #contactform {
+  display: inline-block;
+}
+
+/*Header*/
+#header {
+  width: 100%;
+  position: relative;
+  height: 8rem;
+  background-color: white;
+  z-index: 1;
+}
+
+/*Header behållare av logga och meny*/
+#headercontainer {
+  width: 75%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 8rem;
+}
+/*Logga*/
+#logo {
+  float: left;
+  margin: auto;
+  flex-basis: 50%;
+}
+/*Meny behållare*/
+#navigation {
+  margin: auto;
+  flex-basis: 50%;
+}
+
+/*Stilsättning av menyns "lista"*/
+#navigation ul {
+  display: flex;
+  float: right;
+}
+
+/*Stilsättning på varje item i menyn*/
+#navigation ul li {
+  padding: 0 1rem;
+  list-style: none;
+}
+
+/*Stilsättning av länkar i menyn*/
+#navigation ul li a:link {
+  color: #27a723;
+  text-decoration: none;
+  font: 1.3rem Arial;
+}
+
+/*Stilsättning av besökta länkar i menyn*/
+#navigation ul li a:visited {
+  color: #27a723;
+}
+
+/*Stilsättning av länkar som musen hålls över i menyn*/
+#navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+#navigation ul li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 1rem 0.5rem;
+  border-radius: 0rem 0rem 10% 10%;
+  line-height: 4rem;
+}
+
+#dropmenu1 {
+  margin-left: -1.6rem;
+}
+#dropmenu2 {
+  margin-left: -3rem;
+}
+
+#navigation ul li:hover ul {
+  display: block;
+}
+
+#navigation ul li ul li {
+  height: 2.5rem;
+  text-align: center;
+}
+
+/*Delare*/
+#divider {
+  width: 100%;
+  height: 20rem;
+  background-image: url("http://zylion.se/tutorial/bilder/pile-1868894_1920.jpg");
+  background-position: center;
+}
+
+#divider-tirehotel {
+  width: 100%;
+  height: 20rem;
+  background-image: url("pics/dackhotell_banner1.jpg");
+  background-position: center;
+}
+
+#divider-verkstad {
+  width: 100%;
+  height: 20rem;
+  background-image: url("pics/dackverkstad-hero.jpg");
+  background-position: center;
+}
+
+/*Sidans innehåll*/
+#body {
+  width: 100%;
+  background-color: lightgray;
+  padding: 2rem 0;
+}
+/*Behållare för knappar som finns på startsida*/
+#buttons-container {
+  margin: auto;
+  width: 75%;
+  height: 10rem;
+  display: flex;
+  padding: 0.5rem;
+}
+
+/*Stilsättning för knappar som finns på startsida*/
+.button {
+  height: 9rem;
+  width: 9rem;
+  background-image: radial-gradient(circle, #27a723, #27a723, #1d861a);
+  border-radius: 100%;
+  margin: auto;
+  text-decoration: none;
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*Stilsättning för ikoner på knappar*/
+.fa-wrench,
+.fa-calendar-times,
+.fa-store {
+  color: white;
+  font-size: 3.5rem;
+  position: relative;
+  top: 2.6rem;
+  left: 2.6rem;
+}
+/*Special anpassning till bokningsloggan för centrering*/
+.fa-calendar-times {
+  left: 2.9rem;
+}
+
+/*Ändringen av bakgrundfärg vid mus över knapp*/
+.button:hover {
+  background-image: radial-gradient(circle, #42c53d, #27a723, #1d861a);
+}
+/*Behållare för text under knappar på första sidan*/
+#buttons-text {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  padding: 0 0 2rem 0;
+}
+
+/*Stilsättning av text under knappar på första sidan*/
+.button-text {
+  margin: auto;
+  flex-basis: 33%;
+  text-align: center;
+}
+
+/*Behållare för innehåll*/
+#content {
+  display: flex;
+  width: 75%;
+  min-height: 20rem;
+  margin: auto;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*Text behållare*/
+.text {
+  float: left;
+  width: 50%;
+  margin: 0 1rem 0 0;
+}
+
+.text a:link,
+a:visited {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* CSS till verkstad-sidan*/
+.autoshop {
+  margin-top: 1.5rem;
+  display: flex;
+  min-width: 30rem;
+}
+
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offer h2 {
+  padding: 0;
+  margin: auto 1rem;
+  height: 1.5rem;
+}
+/* Stilsättning av behållaren till ikonen av tjänster*/
+.autoshopicon {
+  background-color: #27a723;
+  width: 3rem;
+  height: 3rem;
+}
+/*Stilsättning av ikonerna*/
+.autoshopicon .fa-tools,
+.autoshopicon .fa-handshake {
+  color: white;
+  position: relative;
+  float: left;
+  font-size: 2rem;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+/*Special till handshake ikonen*/
+.autoshop .fa-handshake {
+  left: 0.3rem;
+}
+/*Stilsättning av behållaren till tjänster */
+.autoshopitems {
+  margin-left: 4rem;
+  min-height: 11rem;
+}
+.autoshopitems ul {
+  padding: 0;
+}
+
+.autoshopitems ul li {
+  list-style: none;
+  margin: 0.8rem 0;
+}
+/*Stilsättning av bock bredvid tjänsterna*/
+.autoshopitems .fa-check {
+  color: #27a723;
+}
+/*Stilsättning av behållaren för alla mekaniker*/
+.mechaniccontainer {
+  display: flex;
+}
+/*Stilsättning av behållaren till varje enskild mekaniker*/
+.mechanic {
+  padding: 1rem;
+  width: 15rem;
+}
+/*Justerar h4 margin*/
+.mechanic h4 {
+  padding: 0;
+  margin: 0.5rem 0;
+}
+/*Stilsättning av rundade bilder på mekaniker*/
+.mechanic img {
+  border-radius: 4px;
+}
+/*Stilsättning på bakgrunden till formulär*/
+.form {
+  background-color: rgb(206, 206, 206);
+  padding: 1rem;
+  font: 12px arial;
+  border-radius: 8px;
+}
+
+/*Bild behållare*/
+.bild {
+  float: right;
+  width: 50%;
+  padding: 4rem 0 0 0;
+}
+
+.bild img {
+  float: right;
+}
+
+/*Sidfot*/
+.footer {
+  position: relative;
+  bottom: 0;
+  min-height: 12rem;
+  background-color: rgb(26, 26, 26);
+  width: 100%;
+}
+
+/*Sidfots behållare*/
+.footer .container {
+  display: flex;
+  margin: auto;
+  width: 75%;
+}
+
+/*Stilsättning av osorterade listor i sidfoten och länkar där i*/
+.footer .container ul,
+.footer .container ul a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.705);
+  padding: 0;
+}
+
+/*Stilsättning av osoroterade listor i sidfoten och besökta länkar där i*/
+.footer .container ul,
+.footer .container ul a:visited,
+.footer .container ul a:hover {
+  color: white;
+}
+
+/*Stilsättning av menyn i sidfoten*/
+.footer .container .list1 {
+  margin: auto;
+  text-align: left;
+  line-height: 2rem;
+  width: 40%;
+}
+
+/*Stilsättning av sociala medier-knappar*/
+.footer .container .socials {
+  margin: auto;
+  text-align: center;
+  line-height: 2rem;
+}
+
+/*Stilsättning av verksamhetsuppgifter*/
+.footer .container .list2 {
+  margin: auto;
+  text-align: right;
+  line-height: 2rem;
+  width: 40%;
+}
+
+/*Stilsättning av länkar i sociala medier.*/
+.footer .container .socials a {
+  font-size: 1.5rem;
+}
+
+/*Stilsättning av länkar som hålls över av musen i samtliga delar i sidfoten*/
+.footer .container .socials a:hover,
+.footer .container .list1 a:hover,
+.footer .container .list2 a:hover {
+  opacity: 1;
+}
+
+/*Stilsättning av Copyright behållaren*/
+.footer .copy {
+  position: relative;
+  left: 2.4rem;
+  width: 75%;
+  color: white;
+  margin: auto;
+  font: 10px arial;
+  padding-top: 1rem;
+}
+
+/*Stilsättning av Copyright texten*/
+.copy p {
+  margin: 0;
+}
+
+#jobb-content {
+  font-size: 1.2rem;
+  width: 75%;
+  min-height: 20rem;
+  margin: auto;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0px 0 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.jobbannons {
+  margin: 3rem auto;
+  padding: 1rem 0;
+  border: 1px solid black;
+  width: 75%;
+  height: 20rem;
+  box-shadow: 0px 0 12px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+/*Text behållare*/
+.jobbannons-text {
+  flex-basis: 40%;
+  margin: auto;
+}
+.jobbannons h1 {
+  font-size: 1.5rem;
+}
+
+.jobbannons-bild {
+  flex-basis: 40%;
+  margin: auto;
+}
+
+.jobbannons-bild img {
+  width: 100%;
+}
+
+.bild50 {
+  width: 50%;
+}
+.bild60 {
+  width: 60%;
+}
+.bild70 {
+  width: 70%;
+}
+.bild80 {
+  width: 80%;
+}
+.bild90 {
+  width: 90%;
+}
+.bild100 {
+  width: 100%;
+}
