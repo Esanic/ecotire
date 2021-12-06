@@ -12,7 +12,7 @@ function externtAPI() {
 
             const infoContainer = document.createElement("div");
             infoContainer.setAttribute("class", "infoContainer");
-            // infoContainer.setAttribute("style", "background-image: url(" + data[i].movie_banner + "); background-size: cover; opacity: 50%");
+           
 
             const banner = document.createElement("img")
             banner.setAttribute("class", "banner");
